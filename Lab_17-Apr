@@ -1,0 +1,124 @@
+  python-cffi.x86_64 0:1.6.0-5.el7
+  python-enum34.noarch 0:1.0.4-1.el7
+  python-httplib2.noarch 0:0.9.2-0.1.el7
+  python-idna.noarch 0:2.4-1.el7
+  python-keyczar.noarch 0:0.71c-2.el7
+  python-paramiko.noarch 0:2.1.1-0.4.el7
+  python-ply.noarch 0:3.4-11.el7
+  python-pycparser.noarch 0:2.14-1.el7
+  python2-crypto.x86_64 0:2.6.1-13.el7
+  python2-cryptography.x86_64 0:1.7.2-2.el7
+  python2-jmespath.noarch 0:0.9.0-1.el7
+  python2-pyasn1.noarch 0:0.1.9-7.el7
+  sshpass.x86_64 0:1.06-1.el7
+
+Complete!
+[root@ip-172-31-17-249 demos]# ls -ltr
+total 16
+-rw-r--r--. 1 root root 15080 Apr 17 21:39 epel-release-7-11.noarch.rpm
+[root@ip-172-31-17-249 demos]# date
+Tue Apr 17 21:44:59 UTC 2018
+[root@ip-172-31-17-249 demos]# history
+    1  exit
+    2  pwd
+    3  useradd devopsadmin
+    4  ls
+    5  su devopsadmin
+    6  su - devopsadmin
+    7  su - ec2-user
+    8  passwd admin devopsadmin
+    9  passwd  devopsadmin
+   10  change -e devopsadmin
+   11  chage - u devopsadmin
+   12  chage -E devopsadmin
+   13  pam_tallyz - u devopsadmin
+   14  pam_tally z - u devopsadmin
+   15  pam_tally z
+   16  chage -E
+   17  su - devopsadmin
+   18  chage -E
+   19  pam_tally z
+   20  pam_tally2 -u devopsadmin --reset
+   21  chage -l
+   22  chage -l devopsadmin
+   23  exit
+   24  pwd
+   25  vi .bashrc
+   26  ls -ltr
+   27  lt
+   28  vi .bashrc
+   29  ls -ltr4
+   30  ls -ltr
+   31  lt
+   32  source .bashrc
+   33  yum install source -y
+   34  source .bashrc
+   35  lt
+   36  pwd
+   37  source .bashrc
+   38  ls -ltr
+   39   cd /etc
+   40  ls -ltr
+   41  /etc/profile
+   42  cd ..
+   43  cd -
+   44  pwd
+   45  cd
+   46  ls -ltr
+   47  pwd
+   48  vi .bashrc
+   49  source .bashrc
+   50  pwd
+   51  mkdir -p /opt/jenkins/jobs/demos
+   52  cd scripts
+   53  ls -ltr
+   54  ls -ltr /opt/jenkins/jobs/demos/
+   55  cd /opt/jenkins/jobs/demos
+   56  ls -ltr
+   57  curl http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm -O
+   58  ls -ltr
+   59  rpm -ivh epel-release-7-11.noarch.rpm
+   60  ls -ltr
+   61  ls -ltra
+   62  ls -ltrh
+   63  vi epel.repo
+   64  ls -ltr
+   65  cd .
+   66  ls -ltr
+   67  yum update
+   68  yum install ansible -y
+   69  ls -ltr
+   70  date
+   71  history
+ 163  vi config.xml
+  164  ls -ltr
+  165  cd -
+  166  cd /root
+  167  ls -ltr
+  168  mkdir -p /root/scripts/jenkins/jobs
+  169  touch config.xml
+  170  ls-ltr
+  171  ls -ltr /root/scripts/jenkins/jobs
+  172  find /opt/jenkins/jobs/demos -name config.xml exec cp -rfp {} /root/scripts/jenkins/jobs
+  173  find -name  /opt/jenkins/jobs/demos/config.xml type f exec cp -rfp {} /root/scripts/jenkins/jobs
+  174  find . -type f -name "config.xml" -exec cp {} /root/scripts/jenkins/jobs
+  175* find -name  /opt/jenkins/jobs/demos/config.xml type f-exec cp -rfp {} /root/scripts/jenkins/jobs\;
+  176  find . -type f -name "config.xml" -exec cp -n {} /root/scripts/jenkins/jobs\;
+  177  find /opt/jenkins/jobs/demos -type f -name "config.xml"|xargs cp -t /root/scripts/jenkins/jobs
+  178  ls -ltr /root/scripts/jenkins/jobs
+  179  history
+  180  ls -ltr
+  181  rm -f config.xml
+  182  ls -ltr
+  183  cd scripts/jenkins/jobs
+  184  ls -ltr
+  185  ipts/jenkins/jobs
+  186    179  history
+  187  [root@ip-172-31-17-249 ~]# ls -ltr
+  188  total 16
+  189  history
+  [root@ip-172-31-17-249 jobs]# pwd
+/root/scripts/jenkins/jobs
+[root@ip-172-31-17-249 jobs]# ls -ltr
+total 4
+-rw-r--r--. 1 root root 21 Apr 17 22:07 config.xml
