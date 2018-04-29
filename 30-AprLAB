@@ -1,0 +1,17 @@
+C:\Program Files\Amazon\AWSCLI>aws s3 ls
+2018-04-16 00:32:36 www.devopsdba.com
+
+C:\Program Files\Amazon\AWSCLI>aws s3api create-bucket --bucket static-s3 --regi
+on us-east-1
+
+An error occurred (IllegalLocationConstraintException) when calling the CreateBu
+cket operation: The unspecified location constraint is incompatible for the regi
+on specific endpoint this request was sent to.
+
+C:\Program Files\Amazon\AWSCLI>aws s3api create-bucket --bucket static-s3-RDS --
+region us-east-1
+
+An error occurred (InvalidBucketName) when calling the CreateBucket operation: T
+he specified bucket is not valid.
+
+C:\Program Files\Amazon\AWSCLI>
