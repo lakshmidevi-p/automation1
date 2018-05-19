@@ -1,0 +1,13 @@
+Prevent SSH timeout on the client side
+If you’re on Mac or Linux, you can edit your local SSH config file in ~/.ssh/config and add the following line:
+
+ServerAliveInterval 120
+This will send a “null packet” every 120 seconds on your SSH connections to keep them alive.
+
+Prevent SSH timeout on the server side
+If you’re a server admin, you can add the following to your SSH daemon config in /etc/ssh/sshd_config on your servers to prevent the clients to time out – so they don’t have to modify their local SSH config:
+
+ClientAliveInterval 120
+ClientAliveCountMax 720
+This will make the server send the clients a “null packet” every 120 seconds and not disconnect them until the client have been inactive for 720 intervals (120 seconds * 720 = 86400 seconds = 24 hours).
+
